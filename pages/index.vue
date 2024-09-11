@@ -222,6 +222,8 @@ import {
   GithubIcon,
 } from "lucide-vue-next";
 
+const analytics = useNuxtApp().$analytics;
+
 const infoTexts = ref([
   {
     text: "Muchas empresas prefieren evitar fotos para reducir sesgos de género o etnia.",
