@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 # ✨ Aplica a empresas tecnológicas con esta plantilla de CV ✨
 
 ## 👋 ¡Hola!
-### Creé esta plantilla basada en mi propio currículum. 
-### Antes, no obtenía resultados al enviarlo a grandes empresas tech. 
-### Tras pedir retroalimentación a personas con experiencia en grandes compañías, logré mejorarlo enfocándome en el impacto empresarial de mis experiencias. 
-### No solo me ayudó a que aceptaran mi CV, sino también a mejorar en las entrevistas.
+### 👋 ¡Hola! Creé esta plantilla a partir de mi propio currículum. Antes, no obtenía resultados al enviarlo a empresas clave en la industria. Luego de recibir retroalimentación de personas con experiencia en grandes compañías, logré mejorarlo enfocándome en el impacto que generé en cada trabajo. Este enfoque ayudó a que aceptaran mi CV y a mejorar mi desempeño en las entrevistas.
      
 =======
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -77,10 +74,3 @@ pnpm run preview
 
 # yarn
 yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
->>>>>>> master
