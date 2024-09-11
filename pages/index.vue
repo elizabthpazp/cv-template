@@ -330,7 +330,7 @@ useHead({
       "data-id": "elizabethpH",
       "data-description": "Support me on Buy me a pizza!",
       "data-message":
-        "Thank you so much for helping me keep creating content! 💜",
+        "¡Muchas gracias por ayudarme a seguir creando contenido! 💜",
       "data-color": "rgb(124 58 237)",
       "data-position": "Right",
       "data-x_margin": "19",
