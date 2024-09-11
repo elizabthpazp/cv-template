@@ -209,8 +209,7 @@
         </div>
       </div>
     </div>
-    <Footer />
-    <Analytics/>
+    <Footer /> 
   </div>
 </template>
 
