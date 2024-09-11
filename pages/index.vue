@@ -1,5 +1,5 @@
 <template>
-  < class="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 font-mono">
+  <div class="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 font-mono">
     <div class="max-w-5xl text-center mx-auto">
       <div
         class="absolute top-0 left-0 right-0 p-4 flex justify-center sm:justify-end"
@@ -209,7 +209,7 @@
         </div>
       </div>
     </div>
-    <Footer /> 
+    <Footer />
   </div>
 </template>
 
