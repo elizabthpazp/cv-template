@@ -36,7 +36,7 @@
         <div class="bg-gray-900 text-white p-8 md:w-1/3">
           <div class="text-center mb-8">
             <img
-              src="/assets/img/profile.jpg"
+              src="/assets/img/profile2.jfif"
               alt="Profile Picture"
               class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-700"
             />
