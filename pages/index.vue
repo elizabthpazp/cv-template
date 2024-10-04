@@ -337,6 +337,11 @@ useHead({
       "data-y_margin": "15",
       defer: true,
     },
+    {
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7738434269106493",
+      async=true,
+      crossorigin="anonymous" 
+    }
   ],
 });
 </script>
