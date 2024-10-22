@@ -11,6 +11,7 @@ export const links = {
     discord: "https://discord.com/users/1062024233577893918",
     facebook: "https://m.facebook.com/100006840368095/", 
     twitter: "https://twitter.com/elizabthpazp",  
-    threads: "https://www.threads.net/@elizabthpazp.js"
+    threads: "https://www.threads.net/@elizabthpazp.js",
+    youtube: "https://www.youtube.com/@elijsdev"
 } as const
  
