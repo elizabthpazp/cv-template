@@ -1,5 +1,5 @@
 export const links = {
-    blog: "https://blog-elizabthpazp.vercel.app",
+    blog: "https://blog.elijs.dev",
     github: "https://github.com/elizabthpazp",
     web: "https://elijs.dev",
     githubBlog: "https://github.com/elizabthpazp/blog",
