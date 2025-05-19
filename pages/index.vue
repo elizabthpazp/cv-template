@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 font-mono">
-    <div class="max-w-5xl text-center mx-auto">
+  <div class="min-h-screen bg-gray-100 py-12 font-mono">
+    <div class="max-w-5xl text-center mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="absolute top-0 left-0 right-0 p-4 flex justify-center sm:justify-end"
       >
@@ -30,7 +30,7 @@
       </p>
     </div>
     
-   <div class="min-h-screen py-2 px-4 sm:px-6 lg:px-8"> 
+   <div class="min-h-screen py-2"> 
   <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden"> 
     <div class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-6">
       <div class="max-w-3xl mx-auto">
@@ -113,7 +113,7 @@
           <div class="grid grid-cols-2 gap-2">
             <div class="flex items-center">
               <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
-              <span>JavaScript/TypeScript</span>
+              <span>JavaScript</span>
             </div>
             <div class="flex items-center">
               <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
