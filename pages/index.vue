@@ -29,196 +29,158 @@
         desempeño en las entrevistas.
       </p>
     </div>
-    <div
-      class="max-w-4xl mx-auto bg-white shadow-xl rounded-3xl overflow-hidden"
-    >
-      <div class="flex flex-col md:flex-row">
-        <div class="bg-gray-900 text-white p-8 md:w-1/3">
-          <div class="text-center mb-8">
-            <img
-              src="/assets/img/profile2.jfif"
-              alt="Profile Picture"
-              class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-700"
-            />
-            <div class="flex text-center mb-3 items-center justify-center">
-              (Foto opcional)
-              <InfoTooltip
-                class="ml-2 text-gray-500 hover:text-gray-700"
-                :text="infoTexts[0].text"
-              />
-            </div>
-            <h1
-              class="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold"
-            >
-              Nombre completo
-            </h1>
-            <p class="text-gray-400">Rol al que aplicas</p>
+    
+   <div class="min-h-screen py-2 px-4 sm:px-6 lg:px-8"> 
+  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden"> 
+    <div class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-6">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-1">Full Name</h1>
+        <p class="text-xl mb-4">Role You’re Applying For</p>
+        
+        <div class="flex flex-wrap items-center gap-4 text-sm">
+          <div class="flex items-center">
+            <span class="mr-2">📍</span>
+            <span>Country, City</span>
           </div>
-          <div class="space-y-4">
-            <div class="flex items-center">
-              <MapPinIcon class="w-5 h-5 mr-2" />
-              <span>País, ciudad (opcional)</span>
-            </div>
-            <div class="flex items-center">
-              <MailIcon class="w-5 h-5 mr-2" />
-              <span>Correo electrónico</span>
-            </div>
-            <div class="flex items-center">
-              <PhoneIcon class="w-5 h-5 mr-2" />
-              <span>Teléfono (opcional)</span>
-            </div>
-            <div class="flex items-center">
-              <GlobeIcon class="w-5 h-5 mr-2" />
-              <span>Sitio web</span>
-            </div>
+          <div class="flex items-center">
+            <span class="mr-2">📧</span>
+            <span>email@example.com</span>
           </div>
-          <div class="mt-8">
-            <div class="flex">
-              <h2 class="text-xl font-semibold mb-4">Habilidades</h2>
-              <InfoTooltip
-                class="ml-2 text-gray-500 hover:text-gray-700"
-                position="right"
-                :text="infoTexts[4].text"
-                style="margin-top: 7px"
-              />
-            </div>
-            <p class="text-gray-600 text-md mb-4">
-              Destaca las habilidades que consideras más relevantes para el
-              puesto que buscas. Las palabras clave son importantes, ya que
-              muchas empresas usan software automatizado para filtrar CVs.
-            </p>
-            <div class="grid grid-cols-2 gap-4">
-              <div
-                v-for="skill in skills"
-                :key="skill.name"
-                class="flex items-center col-auto"
-              >
-                <div class="text-blue-500 mr-2">◉</div>
-                <span class="text-sm">{{ skill.name }}</span>
-              </div>
-            </div>
+          <div class="flex items-center">
+            <span class="mr-2">📱</span>
+            <span>+123 456 7890</span>
           </div>
-          <div class="mt-8">
-            <div class="flex">
-              <h2 class="text-xl font-semibold mb-4">Idiomas</h2>
-              <InfoTooltip
-                class="ml-2 text-gray-500 hover:text-gray-700"
-                position="right"
-                :text="infoTexts[5].text"
-                style="margin-top: 7px"
-              />
-            </div>
-            <p class="text-gray-600 text-md mb-4">
-              Enumera los idiomas que hablas.
-            </p>
-            <div class="grid grid-cols-2 gap-4">
-              <div
-                v-for="lang in langs"
-                :key="lang.name"
-                class="flex items-center col-auto"
-              >
-                <div class="text-blue-500 mr-2">◉</div>
-                <span class="text-sm">{{ lang.name }}</span>
-              </div>
-            </div>
+          <div class="flex items-center">
+            <span class="mr-2">🌐</span>
+            <span>mywebsite.com</span>
           </div>
-        </div>
-
-        <div class="p-8 md:w-2/3">
-          <section class="mb-8">
-            <div class="flex">
-              <h2
-                class="font-bold mb-4 text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl"
-              >
-                Resumen
-              </h2>
-              <InfoTooltip
-                class="ml-2 text-gray-700 hover:text-gray-400 mt-mobile-cv"
-                position="right"
-                :text="infoTexts[1].text"
-              />
-            </div>
-            <p class="text-gray-700">
-              Escribe un párrafo breve (3-4 líneas máximo) explicando quién
-              eres, cuántos años de experiencia tienes y lo que puedes aportar a
-              la empresa a la que aplicas. Utiliza este espacio para resaltar
-              tus valores, principios, logros y motivaciones. Mantén la
-              brevedad, pero sé impactante.
-            </p>
-          </section>
-
-          <section class="mb-8">
-            <div class="flex items-center">
-              <h2 class="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold mb-4">
-                Experiencia laboral más reciente
-                <InfoTooltip
-                  class="ml-2 text-gray-700 hover:text-gray-400 hidden sm:inline"
-                  position="bottom"
-                  :text="infoTexts[2].text"
-                  style="margin-top: 0; display: inline-block"
-                />
-              </h2>
-            </div>
-
-            <p class="text-md text-gray-700 mb-4">
-              Añade tu experiencia más reciente y relevante (menos de 10 años).
-              Incluye tu rol más reciente en la empresa, destacando si recibiste
-              alguna promoción. Especifica la duración e industria o tipo de
-              empresa. Describe tus responsabilidades, enfocándote en resultados
-              clave y procesos diferenciadores, y resalta el impacto que
-              generaste en el negocio.
-            </p>
-            <div v-for="job in experience" :key="job.company" class="mb-4">
-              <h3 class="text-xl font-semibold">{{ job.title }}</h3>
-              <p class="text-gray-600">{{ job.company }} | {{ job.period }}</p>
-              <ul class="list-disc list-inside mt-2 text-gray-700">
-                <li
-                  v-for="responsibility in job.responsibilities"
-                  :key="responsibility"
-                >
-                  {{ responsibility }}
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section>
-            <div class="flex">
-              <h2
-                class="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold mb-4"
-              >
-                Educación
-              </h2>
-              <InfoTooltip
-                class="ml-2 text-gray-700 hover:text-gray-400 mt-mobile-cv"
-                position="right"
-                :text="infoTexts[3].text"
-              />
-            </div>
-            <p class="text-gray-700 text-md mb-4">
-              Añade solo títulos académicos o estudios relevantes para el puesto
-              (Grados universitarios, cursos especializados o bootcamps). Un
-              curso corto online puede no ser tan relevante a menos que esté
-              directamente relacionado con el trabajo que buscas.
-            </p>
-            <div v-for="edu in education" :key="edu.degree" class="mb-4">
-              <h3 class="text-xl font-semibold">{{ edu.degree }}</h3>
-              <p class="text-gray-600">{{ edu.school }} | {{ edu.year }}</p>
-            </div>
-          </section>
+          <div class="flex items-center">
+            <span class="mr-2">💻</span>
+            <span>github.com/username</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="p-6"> 
+      <section class="mb-6">
+        <h2 class="text-xl font-bold mb-3 text-indigo-700 border-b border-indigo-200 pb-2">
+          Summary
+        </h2>
+        <p class="text-gray-700">
+          Professional with [X] years of experience in [specialty]. Specialized in [main skills] 
+          with a focus on [value you bring]. Proven ability to [notable achievement] and [another key skill or achievement].
+          Seeking to contribute [specific benefit] to [type of company/role].
+        </p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-bold mb-3 text-indigo-700 border-b border-indigo-200 pb-2">
+          Work Experience
+        </h2>
+        
+        <div class="mb-4">
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-semibold">Senior Web Developer</h3>
+            <span class="text-gray-600 text-sm">2019 - Present</span>
+          </div>
+          <p class="text-gray-700 font-medium">TechCorp Inc.</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+            <li>Led a team of 5 developers, improving team efficiency by 25%</li>
+            <li>Implemented features that increased user retention by 30%</li>
+            <li>Optimized web performance, reducing load times by 40%</li>
+          </ul>
+        </div>
+        
+        <div class="mb-4">
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-semibold">Web Developer</h3>
+            <span class="text-gray-600 text-sm">2017 - 2019</span>
+          </div>
+          <p class="text-gray-700 font-medium">Innovate Solutions</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+            <li>Developed 3 responsive web applications with over 10K active users</li>
+            <li>Reduced production bugs by 35% through automated testing</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> 
+        <section>
+          <h2 class="text-xl font-bold mb-3 text-indigo-700 border-b border-indigo-200 pb-2">
+            Technical Skills
+          </h2>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>JavaScript/TypeScript</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>Vue.js/Nuxt</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>React</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>Node.js</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>MongoDB/SQL</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>REST/GraphQL APIs</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>Git/CI/CD</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
+              <span>Testing (Jest/Cypress)</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold mb-3 text-indigo-700 border-b border-indigo-200 pb-2">
+            Education
+          </h2>
+          <div class="mb-3">
+            <div class="flex justify-between">
+              <h3 class="font-semibold">Bachelor of Science in Computer Science</h3>
+              <span class="text-gray-600 text-sm">2016</span>
+            </div>
+            <p class="text-gray-700">University of Technology</p>
+          </div> 
+           
+          <div class="mt-4">
+            <h3 class="font-semibold mb-2">Languages</h3>
+            <div class="flex space-x-4">
+              <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">Spanish (Native)</span>
+              <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">English (Advanced)</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+   
+  <div class="max-w-4xl mx-auto mt-8 text-center text-gray-500 text-sm">
+    CV optimized for ATS and AI analysis • Updated: May 2025
+  </div>
+</div> 
+
     <Footer />
   </div>
 </template>
 
 <script setup>
-import {
-  MapPinIcon,
-  MailIcon,
-  PhoneIcon,
-  GlobeIcon,
+import { 
   GithubIcon,
 } from "lucide-vue-next";
 
