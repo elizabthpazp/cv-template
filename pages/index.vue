@@ -183,8 +183,18 @@
 import { 
   GithubIcon,
 } from "lucide-vue-next";
+import { onMounted } from 'vue';
 
 const analytics = useNuxtApp().$analytics;
+
+// Inicializar Buy Me a Coffee widget después de que el DOM esté listo
+onMounted(() => {
+  // Asegurar que el script esté cargado correctamente
+  const script = document.querySelector('script[data-name="BMC-Widget"]');
+  if (script && window.BMC) {
+    window.BMC.init();
+  }
+});
 
 const infoTexts = ref([
   {
@@ -293,11 +303,12 @@ useHead({
       "data-description": "Support me on Buy me a pizza!",
       "data-message":
         "¡Muchas gracias por ayudarme a seguir creando contenido! 💜",
-      "data-color": "rgb(124 58 237)",
+      "data-color": "#7C3AED",
       "data-position": "Right",
       "data-x_margin": "19",
       "data-y_margin": "15",
       defer: true,
+      tagPosition: "bodyClose",
     },
     {
       src:"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7738434269106493",
